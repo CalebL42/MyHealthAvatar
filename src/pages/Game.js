@@ -49,7 +49,7 @@ function Game() {
   const incrementWellnessLevel = () => {
     setWellnessLevel(wellnessLevel + 100);
     setCurrentQuestionIndex((prevIndex) => (prevIndex + 1) % questions.length);
-    setShowFeedback(false);
+    setFalse();
   };
 
   const decrementWellnessLevel = () => {
@@ -57,6 +57,10 @@ function Game() {
     setCurrentQuestionIndex((prevIndex) => (prevIndex + 1) % questions.length);
     setShowFeedback(true);
   };
+
+  const setFalse = () => {
+    setShowFeedback(false);
+  }
 
   useEffect(() => {
     if (wellnessLevel >= 200) {
@@ -111,10 +115,12 @@ function Game() {
       <p>MyHealthyAvatar</p>
       </header>
       <div className="question-container">
-        <p className="question">{questions[currentIndex]}</p>
+        {!showFeedback && (<div><p className="question">{questions[currentIndex]}</p>
         <button className = "yes_button" onClick={incrementWellnessLevel}>Yes</button>
-        <button className = "no_button" onClick={decrementWellnessLevel}>No</button>
-        {showFeedback && (<div className="feedback">{feedback[(currentIndex + feedback.length - 1) % feedback.length]}</div>)}
+        <button className = "no_button" onClick={decrementWellnessLevel}>No</button></div>)}
+        {showFeedback && (<div className="feedback">{feedback[(currentIndex + feedback.length - 1) % feedback.length]}
+          <div><button className = "continue" onClick={setFalse}>Continue</button></div>
+        </div>)}
       </div>
       <div className="avatar">
         <img src={avatarImage} alt={avatarName} width = '500'/>
