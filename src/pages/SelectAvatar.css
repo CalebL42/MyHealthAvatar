@@ -1,23 +1,21 @@
-.SelectAvatar {
-    text-align: center;
-  }
-  
   .SelectAvatar-header {
-    background-color: #282c34;
+    background-image: url('./start_background.png');
+    width: 100%;
+    background-size: 100%;
+    background-position: 'center top';
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    font-size: 50px;
+    color: rgb(27, 21, 87);
   }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
-    width: 15%;
-    padding: 120px;
   }
   
   /* Clear floats after image containers */

@@ -1,20 +1,28 @@
 import React, { useState } from 'react';
 import './Game.css';
 import { useParams } from 'react-router-dom';
-import avatar1 from './hoppingham.gif';
+import cat_happy from './cat_happy.gif';
+import ham_happy from './ham_happy.gif';
+import turtle_happy from './turtle_happy.gif';
+import cat_neutral from './cat_neutral.gif';
+import ham_neutral from './ham_neutral.gif';
+import turtle_neutral from './turtle_neutral.gif';
+import cat_sad from './cat_sad.gif';
+import ham_sad from './ham_sad.gif';
+import turtle_sad from './turtle_sad.gif';
 
 function Game() {
   const { avatarName } = useParams();
   let avatarImage;
   switch (avatarName) {
-    case 'avatar1':
-      avatarImage = avatar1;
+    case 'cat':
+      avatarImage = cat_neutral;
       break;
-    case 'avatar2':
-      avatarImage = avatar1;
+    case 'ham':
+      avatarImage = ham_neutral;
       break;
-    case 'avatar3':
-      avatarImage = avatar1;
+    case 'turtle':
+      avatarImage = turtle_neutral;
       break;
     default:
       avatarImage = null; // Set a default image or handle the case where avatarName is not recognized
@@ -53,7 +61,7 @@ function Game() {
         <button className = "no_button" onClick={decrementWellnessLevel}>No</button>
       </div>
       <div className="avatar">
-        <img src={avatarImage} alt={avatarName} />
+        <img src={avatarImage} alt={avatarName} width = '500'/>
       </div>
       <div className="wellness">
         <p>Wellness level: {wellnessLevel}</p>

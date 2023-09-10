@@ -1,7 +1,9 @@
 import './SelectAvatar.css';
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import avatar1 from './hoppingham.gif';
+import cat_happy from './cat_happy.gif';
+import ham_happy from './ham_happy.gif';
+import turtle_happy from './turtle_happy.gif';
 
 function SelectAvatar() {
 
@@ -9,29 +11,32 @@ function SelectAvatar() {
       <div className = "SelectAvatar">
       <header className = "SelectAvatar-header">
       <p>Welcome to MyHealthyAvatar!</p>
-      <p>Select your avatar below:</p>
+      <p>Select the avatar that best represents yourself:</p>
       <div className="row">
           <div className="column">
-          <Link to='./Game/avatar1'>
+          <Link to='./Game/cat'>
               <img
-                src={avatar1}
-                alt="avatar3"
+                src={cat_happy}
+                alt="cat"
+                width='500px'
               ></img>
             </Link>
           </div>
           <div className="column">
-          <Link to='./Game/avatar2'>
+          <Link to='./Game/ham'>
               <img
-                src={avatar1}
-                alt="avatar3"
+                src={ham_happy}
+                alt="ham"
+                width='500px'
               ></img>
             </Link>
           </div>
           <div className="column">
-          <Link to='./Game/avatar3'>
+          <Link to='./Game/turtle'>
               <img
-                src={avatar1}
-                alt="avatar3"
+                src={turtle_happy}
+                alt="turtle"
+                width='550px'
               ></img>
             </Link>
           </div>
