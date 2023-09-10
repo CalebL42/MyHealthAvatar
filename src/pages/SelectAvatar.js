@@ -1,5 +1,4 @@
 import './SelectAvatar.css';
-import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import cat_happy from './cat_happy.gif';
 import ham_happy from './ham_happy.gif';
@@ -18,7 +17,7 @@ function SelectAvatar() {
               <img
                 src={cat_happy}
                 alt="cat"
-                width='500px'
+                width='350px'
               ></img>
             </Link>
           </div>
@@ -27,7 +26,7 @@ function SelectAvatar() {
               <img
                 src={ham_happy}
                 alt="ham"
-                width='500px'
+                width='350px'
               ></img>
             </Link>
           </div>
@@ -36,7 +35,7 @@ function SelectAvatar() {
               <img
                 src={turtle_happy}
                 alt="turtle"
-                width='550px'
+                width='400px'
               ></img>
             </Link>
           </div>

@@ -1,10 +1,9 @@
-  .SelectAvatar-header {
-    background-image: url('./start_background.png');
+  .SelectAvatar {
+    background-image: url('./start_background.jpg');
     width: 100%;
-    background-size: 100%;
-    background-position: 'center top';
-    background-repeat: no-repeat;
-    min-height: 100vh;
+    height: 1000px;
+  }
+  .SelectAvatar-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,6 +17,8 @@
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
+    margin-left: 60px;
+    margin-right: 60px;
     float: left;
   }
   
