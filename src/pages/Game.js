@@ -42,7 +42,7 @@ function Game() {
     "Physical activity helps manage weight, reduces the risk of disease, and enhances your ability to do everyday activities",
     "Studies have shown that people with satisfying relationships in their community are happier, have fewer health issues and even live longer",
     "Diving into a good book can lower your heart rate, ease muscle tension, and relieve stress up to 68 percent.",
-    "Nature connectedness is associated with lower levels of poor mental health, and lower depression and anxiety."
+    "Nature connectedness is associated with improved attention, better mood, and lower levels of poor mental health"
 
   ]
 
