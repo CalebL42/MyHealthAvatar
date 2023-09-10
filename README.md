@@ -1,2 +1,2 @@
 ## In a nutshell
-MyHealthyAvatar is an interactive web app where you choose your own virtual avatar that evaluates your current physical and mental wellness levels and encourages you to complete Self-Care challenges.
+MyHealthyAvatar is an interactive web app where you choose your own virtual avatar that evaluates your current physical and mental wellness levels, and encourages you to complete Self-Care challenges.
