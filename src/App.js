@@ -1,18 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Route,
+  Routes
+} from "react-router-dom";
+
+import SelectAvatar from "./pages/SelectAvatar";
+import Game from "./pages/Game";
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome to MyHealthyAvatar I like hammies
-        </p>
-        Input your answer here poober:
-        <input type = "text"/>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SelectAvatar />} />
+        <Route path="Game" element = {<Game />} />
+      </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
