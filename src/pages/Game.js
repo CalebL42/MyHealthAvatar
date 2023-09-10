@@ -22,16 +22,28 @@ function Game() {
     "Did you get at least 7 hours of restful sleep last night?",
     "Have you been getting regular exercise or physical activity?",
     "Do you eat a balanced diet with a variety of foods?",
-    "Are you staying hydrated throughout the day?",
-    "Have you talked to someone about your feelings lately?"
+    "Have you had any water to drink in the past hour?",
+    "Have you talked to someone about your feelings lately?",
+    "Challenge: Say 5 positive affirmations about yourself!",
+    "Challenge: Do 20 jumping jacks!",
+    "Challenge: Get socially active today!",
+    "Callenge: Read a chapter of a new book!",
+    "Challenge: Step outside and appreciate nature!"
+
   ];
 
   const feedback = [
     "It is recommended that you fall asleep between the hours of 9 and 10 pm",
     "You should get around 1 hour of excercise a day",
     "Try eating more whole grains, vegetables, fruits, and dairy products",
-    "Try to drink around 8 cups of water per day",
-    "Research shows that even self-talking in the mirror can boost confidence"
+    "Try to drink water regularly throughout the day, totalling at roughly 8 cups",
+    "Research shows that even self-talking in the mirror can boost confidence",
+    "Positive affirmations combats negative thinking habits to improve self-esteem, stress management and wellbeing",
+    "Physical activity helps manage weight, reduces the risk of disease, and enhances your ability to do everyday activities",
+    "Studies have shown that people with satisfying relationships in their community are happier, have fewer health issues and even live longer",
+    "Diving into a good book can lower your heart rate, ease muscle tension, and relieve stress up to 68 percent.",
+    "Nature connectedness is associated with lower levels of poor mental health, and lower depression and anxiety."
+
   ]
 
   const incrementWellnessLevel = () => {
