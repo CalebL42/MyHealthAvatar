@@ -9,8 +9,8 @@ function SelectAvatar() {
   return (
       <div className = "SelectAvatar">
       <header className = "SelectAvatar-header">
-      <p>Welcome to MyHealthyAvatar!</p>
-      <p>Select the avatar that best represents yourself:</p>
+      <p>Welcome to <span style={{color: 'white'}}>MyHealthyAvatar!</span></p>
+      <p>Select your avatar below:</p>
       <div className="row">
           <div className="column">
           <Link to='./Game/cat'>

@@ -14,6 +14,7 @@
     font-size: 80px;
     padding: 20px;
     color: white;
+    text-shadow: 0 0 1px rgb(0, 0, 0);
   }
 
   .question-container {
@@ -27,7 +28,8 @@
     font-size: 50px; 
     width: 50%;
     text-align: center;
-    color: rgb(171, 248, 47); 
+    color: rgb(171, 248, 47);   
+    text-shadow: 0 0 1px rgb(0, 0, 0);
   }
 
   .feedback {
@@ -36,8 +38,8 @@
     font-size: 50px; 
     width: 50%;
     text-align: center;
-    color: rgb(253, 173, 1); 
-    text-shadow: 0 0 8px #FF0000, 0 0 8px #0000FF;  
+    color: rgb(255, 145, 0); 
+    text-shadow: 2px 2px 0px  #000000, -2px -2px 0px  #000000, 2px -2px 0px  #000000, -2px 2px 0px  #000000; 
   }
   
   .avatar {
@@ -53,46 +55,85 @@
     left: 900px;
     font-size: 60px;
     text-align: center;
-    color:#ffffff;
+    color:#f2d3d3;
     padding-left: 50px;
     padding-right: 50px;
     text-shadow: 0 0 20px #FF0000, 0 0 10px #0000FF;
   }
 
   .yes_button {
-    background-color: #4CAF50; 
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 15px 32px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 60px;
+    cursor: pointer;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 60px;
-    margin-left: 300px;
+    outline: none;
+    color: #000000;
+    background-color: #1cde0a;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
     font-family: '3D';
+    margin-top: 50px;
+    margin-left: 330px;
+    margin-right: 100px;
   }
+  
+  .yes_button:hover {background-color: #158309}
+  
+  .yes_button:active {
+    background-color: #0f6505;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
   .no_button {
-    background-color: #4CAF50;
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 15px 32px; 
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 60px;
+    cursor: pointer;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 60px;
-    margin-left: 100px;
+    outline: none;
+    color: #000000;
+    background-color: #f33602;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
     font-family: '3D';
+    margin-top: 50px;
+  }
+  
+  .no_button:hover {background-color: #6d1c0a}
+  
+  .no_button:active {
+    background-color: #6d1c0a;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
 
   .continue {
-    background-color: #4CAF50;
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 15px 32px; 
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 60px;
+    cursor: pointer;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 60px;
-    margin-top: 50px;
+    outline: none;
+    color: #000000;
+    background-color: #1cde0a;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
     font-family: '3D';
+    margin-top: 50px;
+  }
+  
+  .continue:hover {background-color: #158309}
+  
+  .continue:active {
+    background-color: #158309;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
