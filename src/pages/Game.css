@@ -5,12 +5,13 @@
     background-position: 'center top';
     height: 1000px;
     background-repeat: no-repeat;
+    font-family: "VGA";
   }
 
   .Game-header {
     text-align: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 80px;
     padding: 20px;
     color: white;
   }
@@ -21,11 +22,22 @@
   }
   
   .question {
-    margin-left: 170px;
+    margin-left: 130px;
+    margin-top: 0px;
     font-size: 50px; 
-    width: 55%;
+    width: 50%;
     text-align: center;
     color: rgb(171, 248, 47); 
+  }
+
+  .feedback {
+    margin-left: 130px;
+    margin-top: 60px;
+    font-size: 50px; 
+    width: 50%;
+    text-align: center;
+    color: rgb(253, 173, 1); 
+    text-shadow: 0 0 8px #FF0000, 0 0 8px #0000FF;  
   }
   
   .avatar {
@@ -36,34 +48,38 @@
   }
 
   .wellness {
-    background-color: rgb(0, 234, 255);
     position: absolute;
     top: 710px;
-    left: 1050px;
+    left: 900px;
     font-size: 60px;
     text-align: center;
     color:#ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-shadow: 0 0 20px #FF0000, 0 0 10px #0000FF;
   }
 
   .yes_button {
     background-color: #4CAF50; 
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
-    margin-left: 400px;
+    font-size: 60px;
+    margin-left: 300px;
+    font-family: '3D';
   }
   .no_button {
     background-color: #4CAF50;
     border: none;
-    color: white;
-    padding: 15px 32px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px; 
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 60px;
     margin-left: 100px;
+    font-family: '3D';
   }

@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "3D";
+  src: local("3Dventure"),
+    url("./fonts/3Dventure.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "VGA";
+  src: local("VGA"),
+    url("./fonts/VGA.ttf") format("truetype");
+}
+
 .App {
   text-align: center;
 }
