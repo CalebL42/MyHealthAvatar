@@ -23,11 +23,12 @@
   }
   
   .question {
-    margin-left: 130px;
+    margin-left: 120px;
     margin-top: 0px;
     font-size: 50px; 
-    width: 50%;
+    width: 60%;
     text-align: center;
+    text-wrap: balance;
     color: rgb(171, 248, 47);   
     text-shadow: 0 0 1px rgb(0, 0, 0);
   }

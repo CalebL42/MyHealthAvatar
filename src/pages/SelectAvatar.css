@@ -17,8 +17,8 @@
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
     float: left;
   }
   

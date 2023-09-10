@@ -4,12 +4,16 @@ import { useParams } from 'react-router-dom';
 import cat_happy from './cat_happy.gif';
 import ham_happy from './ham_happy.gif';
 import turtle_happy from './turtle_happy.gif';
+import shiba_happy from './shiba_happy.gif';
 import cat_neutral from './cat_neutral.gif';
 import ham_neutral from './ham_neutral.gif';
 import turtle_neutral from './turtle_neutral.gif';
+import shiba_neutral from './shiba_neutral.gif';
 import cat_sad from './cat_sad.gif';
 import ham_sad from './ham_sad.gif';
 import turtle_sad from './turtle_sad.gif';
+import shiba_sad from './shiba_sad.gif';
+
 
 function Game() {
   const { avatarName } = useParams();
@@ -25,9 +29,9 @@ function Game() {
     "Have you had any water to drink in the past hour?",
     "Have you talked to someone about your feelings lately?",
     "Challenge: Say 5 positive affirmations about yourself!",
-    "Challenge: Do 20 jumping jacks!",
-    "Challenge: Get socially active today!",
-    "Callenge: Read a chapter of a new book!",
+    "Challenge: Stand up and do 20 jumping jacks!",
+    "Challenge: Try to talk to someone new today!",
+    "Challenge: Read a chapter of a new book!",
     "Challenge: Step outside and appreciate nature!"
 
   ];
@@ -63,7 +67,7 @@ function Game() {
   }
 
   useEffect(() => {
-    if (wellnessLevel >= 200) {
+    if (wellnessLevel > 200) {
       switch (avatarName) {
         case 'cat':
           setAvatarImage(cat_happy);
@@ -74,10 +78,13 @@ function Game() {
         case 'turtle':
           setAvatarImage(turtle_happy);
           break;
+        case 'shiba':
+          setAvatarImage(shiba_happy);
+          break;
         default:
           setAvatarImage(null);
       }
-    } else if (wellnessLevel <= -200) {
+    } else if (wellnessLevel < -200) {
       switch (avatarName) {
         case 'cat':
           setAvatarImage(cat_sad);
@@ -87,6 +94,9 @@ function Game() {
           break;
         case 'turtle':
           setAvatarImage(turtle_sad);
+          break;
+        case 'shiba':
+          setAvatarImage(shiba_sad);
           break;
         default:
           setAvatarImage(null);
@@ -102,6 +112,9 @@ function Game() {
           break;
         case 'turtle':
           setAvatarImage(turtle_neutral);
+          break;
+        case 'shiba':
+          setAvatarImage(shiba_neutral);
           break;
         default:
           setAvatarImage(null);
