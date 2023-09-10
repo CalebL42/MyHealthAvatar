@@ -11,14 +11,12 @@ import Game from "./pages/Game";
 
 function App() {
   return (
-    <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<SelectAvatar />} />
-        <Route path="Game" element = {<Game />} />
+        <Route path="/" exact Component={SelectAvatar} />
+        <Route path="/Game/:avatarName" Component={Game} />
       </Routes>
     </BrowserRouter>
-    </>
   );
 }
 
